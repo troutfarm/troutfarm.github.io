@@ -13,11 +13,33 @@
 	<div class="container content">
 	<main>
 		<article class="page">
-		<h1 class="page-title">Index</h1>
-		<p>
+		<h1 class="page-title">Test</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus, ante quis laoreet tristique, diam nisl ultricies quam, eu egestas nunc justo a ante. Nunc eu est consequat, blandit sem eu, iaculis enim. Sed ornare, nibh eget rutrum rutrum, nunc quam aliquet nisi, fermentum blandit ante tellus ac diam. Vestibulum rhoncus quis sem ut aliquet. Pellentesque blandit suscipit libero sed semper. Vestibulum mollis tortor nulla, iaculis aliquam augue laoreet quis. In nec magna facilisis magna euismod molestie.
+		</p>
+		<p>Morbi mollis felis sit amet fringilla semper. Nunc ac tincidunt lectus, sit amet dapibus arcu. Integer luctus purus odio. Donec condimentum nisl ut lacus sollicitudin mattis. Donec efficitur porttitor turpis. Aliquam erat volutpat. Nullam maximus lorem lectus, sed convallis erat ornare eu. Pellentesque vulputate pellentesque vulputate.
+		</p>
+		<p>Maecenas et odio sed mi mollis rutrum eget nec lectus. Nulla rhoncus vitae lectus laoreet vestibulum. Maecenas velit sapien, venenatis at euismod ac, dignissim feugiat purus. Duis aliquet vel lacus ut aliquet. Nullam sed maximus lectus, sed pharetra nisi. Cras bibendum nisi at nulla lacinia finibus. Etiam vel purus interdum, convallis elit ac, varius purus. In turpis lacus, tristique ut tincidunt sed, blandit vel ex. Morbi tincidunt, lorem ut lacinia gravida, libero mi luctus dolor, quis feugiat ante nisi vitae massa. Fusce laoreet tempor mi, in malesuada orci facilisis eu. Quisque tristique lacus eget blandit feugiat.
+		</p>
+		<p>Quisque at auctor nisl. Maecenas et ligula erat. Nam tempus dui metus, a volutpat massa iaculis id. Pellentesque quis massa accumsan, bibendum magna sed, ornare ligula. Vivamus viverra diam vel enim ornare, quis sodales nisi egestas. Morbi purus urna, elementum nec efficitur vel, iaculis tincidunt sem. Vivamus sed feugiat ante, a pulvinar nibh. Integer in erat purus. Phasellus hendrerit nec elit nec fringilla. Nulla sit amet blandit leo. Suspendisse potenti. Ut vestibulum ligula at commodo ornare. Vivamus non eros ut augue fringilla dignissim. In tristique euismod urna vel convallis. Cras eu orci at odio aliquet dictum ac at urna. Praesent sodales scelerisque accumsan.
+		</p>
+		<p>Etiam et lectus eros. Sed in malesuada ipsum. Nunc facilisis augue at ante ullamcorper, eu cursus justo fringilla. Nullam vel metus sem. Maecenas euismod quis urna ut tempus. Vestibulum congue leo et ullamcorper fringilla. Duis in enim quis lectus eleifend pulvinar. Donec dolor leo, consequat sit amet convallis posuere, hendrerit condimentum libero. Proin lacinia risus sapien, gravida fermentum augue dapibus in. Proin id massa nec lorem ornare luctus. In tristique sed turpis sed semper. Fusce egestas mi non dapibus imperdiet. Phasellus vestibulum purus est, sed volutpat nulla mattis eget. Vestibulum sodales tempor leo, in elementum justo laoreet sit amet. Mauris auctor, sem nec laoreet dignissim, odio nisl eleifend nisl, id laoreet justo quam at diam. 
 		</p>
 		</article>
 	</main>
+	<div id="scroll"></div>
+	<script>
+	document.addEventListener('scroll', function(){
+		var h = document.documentElement, 
+		    b = document.body,
+		    st = 'scrollTop',
+		    sh = 'scrollHeight';
+		var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+		if (percent > 0)
+			document.getElementById('scroll').textContent = Math.ceil(percent) + '%';
+		else
+			document.getElementById('scroll').textContent = "";
+	});
+	</script>
 	<footer class="footer">
 	<small>
 		<div class="masthead-title small">&copy; <time datetime="2017-02-03T11:35:58-05:00">2017</time>. All rights reserved.</div>
